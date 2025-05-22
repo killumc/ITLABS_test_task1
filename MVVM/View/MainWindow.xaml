@@ -1,0 +1,22 @@
+﻿<Window x:Class="Poll_ver2.MVVM.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Poll_ver2"
+        mc:Ignorable="d"
+        Title="Опросник" 
+        Height="1920" 
+        Width="1080"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="Manual"
+        ResizeMode="NoResize"
+        WindowState="Normal"
+        Style="{StaticResource WindowStyle}">
+
+
+    <!-- Добавляем Viewbox для автоматического масштабирования -->
+    <Viewbox Stretch="Uniform">
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+    </Viewbox>
+</Window>

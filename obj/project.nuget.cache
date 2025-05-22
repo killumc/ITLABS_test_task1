@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "izGv1R+0Xt8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\Poll_ver2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dasha\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

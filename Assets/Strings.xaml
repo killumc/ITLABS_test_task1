@@ -1,0 +1,71 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <!-- Подключаем пространство имен System -->
+        <ResourceDictionary xmlns:sys="clr-namespace:System;assembly=mscorlib">
+            <sys:String x:Key="GoMain">На главную</sys:String>
+            <sys:String x:Key="Exit">Закрыть</sys:String>
+            <sys:String x:Key="Complete">Завершить</sys:String>
+            <sys:String x:Key="SberQ_Page1">SberQ — это сочетание инструментов
+                психодиагностики и оценки компетенций с использованием реалистичной
+                бизнес-симуляции для диагностики
+                управленческих компетенций и потенциала.
+                Метод разработан экспертами СберУниверситета, HR-блоком Сбера
+                и Лабораторией нейронаук и поведения человека.</sys:String>
+            <sys:String x:Key="Question1">1. На какой срок у вас есть карьерная цель:</sys:String>
+            <sys:String x:Key="Question1_Value1">Нет цели</sys:String>
+            <sys:String x:Key="Question1_Value2">1-3 года</sys:String>
+            <sys:String x:Key="Question1_Value3">3+ лет</sys:String>
+
+            <sys:String x:Key="Question2">2. Как часто вы занимаетесь собственным развитием:</sys:String>
+            <sys:String x:Key="Question2_Value1">Редко</sys:String>
+            <sys:String x:Key="Question2_Value2">Периодически</sys:String>
+            <sys:String x:Key="Question2_Value3">Постоянно</sys:String>
+
+            <sys:String x:Key="Question3">3. Как вы понимаете свои сильные стороны:</sys:String>
+            <sys:String x:Key="Question3_Value1">Не было мысли про это</sys:String>
+            <sys:String x:Key="Question3_Value2">Запрашиваю обратную связь</sys:String>
+            <sys:String x:Key="Question3_Value3">Прохожу ассессмент</sys:String>
+
+            <sys:String x:Key="Question4">4. Как вы понимаете, какие компетенции нужно развивать:</sys:String>
+            <sys:String x:Key="Question4_Value1">По мере столкновения с трудностями</sys:String>
+            <sys:String x:Key="Question4_Value2">По рекомендации руководства и коллег</sys:String>
+            <sys:String x:Key="Question4_Value3">На основе карьерных консультаций</sys:String>
+
+            <sys:String x:Key="Question5">5. Где вы берете вдохновение на развитие:</sys:String>
+            <sys:String x:Key="Question5_Value1">А что это?</sys:String>
+            <sys:String x:Key="Question5_Value2">Надо значит надо</sys:String>
+            <sys:String x:Key="Question5_Value3">Меня заряжает стремление к амбициозным целям</sys:String>
+
+            <sys:String x:Key="PageResultEmail">Вы можете получить результаты на почту, для этого заполните поле ниже.</sys:String>
+
+            <sys:String x:Key="PopupAgreementTitle">Согласие 
+на обработку персональных данных
+            </sys:String>
+            <sys:String x:Key="PopupAgreementText1">Я (далее – Субъект), действуя свободно, своей волей и в своем интересе, а также подтверждая свою полную дееспособность, в соответствии с требованиями Федерального закона от 27 июля 2006 г. № 152-ФЗ «О персональных данных» даю Автономной некоммерческой организации дополнительного профессионального образования «Корпоративный университет Сбербанка» ИНН 7736128605, ОГРН 1127799004233, адрес: 117997, г. Москва, 
+ ул. Вавилова, дом 19 (далее – Оператор) настоящее согласие на обработку моих персональных данных (далее – Согласие) в составе:</sys:String>
+
+            <sys:String x:Key="PopupAgreementText2">с целью: информирования об оказываемых Оператором услугах.</sys:String>
+            <sys:String x:Key="PopupAgreementText3">Обработка моих ПДн будет проводиться как автоматизированным, так и без использования средств автоматизации способом, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, блокирование, удаление, уничтожение персональных данных.
+            </sys:String>
+            <sys:String x:Key="PopupAgreementText4">Предоставлением и подтверждением настоящего Согласия является постановка мною метки в соответствующем чек-боксе и нажатие кнопки «Отправить» на тач-панели во время проведения имиджевых мероприятий.
+            </sys:String>
+            <sys:String x:Key="PopupAgreementText5">Согласие действует до прекращения оказания услуг Оператором.
+            </sys:String>
+            <sys:String x:Key="PopupAgreementText6">Согласие может быть отозвано Субъектом или его надлежащим образом уполномоченным представителем путем направления Оператору заявления (письма), позволяющего идентифицировать отправителя, по адресу, указанному в начале текста настоящего Согласия или представителю Оператора по адресам:
+            </sys:String>
+            <sys:String x:Key="PopupAgreementText7">электронная почта:</sys:String>
+
+            <sys:String x:Key="PopupAgreementText8">почта России:              143581, Московская обл., Истринский р-он, д. Аносино, 
+ ул. Университетская, вл. 11</sys:String>
+
+            <sys:String x:Key="PopupPoliticTitle">Политика в отношении обработки персональных данных АНО ДПО «Корпоративный университет Сбербанка»</sys:String>
+
+            <sys:String x:Key="PopupPoliticText">Это текст политики с несколькими ссылками: 
+    sberuniversity.online.ru, sberbankschool.ru, media.sberuniversity.online.
+    Ещё текст с ссылками: sberbank-university.ru, sberuniversity.ru.
+    Дополнительная информация: sber.university, digital-assessment.ru.</sys:String>
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

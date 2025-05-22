@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Resourses\background.png" />
+    <None Remove="Assets\Resourses\background2.png" />
+    <None Remove="Assets\Resourses\emailSettings.json" />
+    <None Remove="Assets\Resourses\Fonts\SB_Sans_Display_Semibold.ttf" />
+    <None Remove="Assets\Resourses\Fonts\SB_Sans_Text.ttf" />
+    <None Remove="Assets\Resourses\logo.png" />
+    <None Remove="Assets\Resourses\qr-code page1.png" />
+    <None Remove="Assets\Resourses\qr-code page4_1.png" />
+    <None Remove="Assets\Resourses\qr-code page4_2.png" />
+    <None Remove="Assets\Resourses\slider.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="emailSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Resourses\background2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Resourses\background.png" />
+    <Resource Include="Assets\Resourses\Fonts\SB_Sans_Display_Semibold.ttf" />
+    <Resource Include="Assets\Resourses\Fonts\SB_Sans_Text.ttf" />
+    <Resource Include="Assets\Resourses\logo.png" />
+    <Resource Include="Assets\Resourses\qr-code page1.png" />
+    <Resource Include="Assets\Resourses\qr-code page4_1.png" />
+    <Resource Include="Assets\Resourses\qr-code page4_2.png" />
+    <Resource Include="Assets\Resourses\slider.png" />
+  </ItemGroup>
+
+</Project>

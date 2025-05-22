@@ -1,0 +1,6 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FontFamily x:Key="LogoFont">pack://application:,,,/Assets/Resourses/Fonts/sb_sans_display_semibold.ttf#SB Sans Display Semibold</FontFamily>
+    <FontFamily x:Key="TextFont">pack://application:,,,/Assets/Resourses/Fonts/SB_Sans_Text.ttf#SB Sans Text</FontFamily>
+
+</ResourceDictionary>

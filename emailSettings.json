@@ -1,0 +1,11 @@
+{
+  "Server": "bakctwxsle9i.mailtrap.ru",
+  "Port": 587,
+  "UseSsl": true,
+  "FromAddress": "dshmykova060904@mail.ru",
+  "FromName": "Test",
+  "Subject": "Результаты теста",
+  "BodyTemplate": "Благодарим вас за прохождение нашего теста!\n\nВаш результат: {0}",
+  "Username": "bakctwxsle9i",
+  "Password": "ba8xgrqp1c5e"
+}

@@ -1,0 +1,22 @@
+﻿<Application x:Class="Poll_ver2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Poll_ver2"
+             
+             xmlns:view="clr-namespace:Poll_ver2.MVVM.View"
+             StartupUri="MVVM/View/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Подключённые стили -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Assets/Styles/SBlock.xaml"/>
+                <ResourceDictionary Source="/Assets/Styles/SButton.xaml"/>
+                <ResourceDictionary Source="/Assets/Styles/STexts.xaml"/>
+                <ResourceDictionary Source="/Assets/Styles/SWindow.xaml"/>
+                <ResourceDictionary Source="/Assets/Strings.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
