@@ -3,68 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\resultview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\resultview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\viewmodel\\pollviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\viewmodel\\pollviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\emailsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:emailsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\model\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\model\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\popuppolitic.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\popuppolitic.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\sendemail\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:sendemail\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\viewmodel\\resultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\viewmodel\\resultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\viewmodel\\pollviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\viewmodel\\pollviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\finalview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\finalview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\resultview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\resultview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\popupagreement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\popupagreement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\emailsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:emailsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\assets\\styles\\sblock.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:assets\\styles\\sblock.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\popuppolitic.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\popuppolitic.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\popuperror.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\popuperror.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\resultview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\resultview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\viewmodel\\popupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\viewmodel\\popupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\popuperror.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\popuperror.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\pollview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\pollview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|c:\\users\\dasha\\source\\repos\\poll_ver2\\mvvm\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F2D678-3104-4458-9523-C7AF57B159DF}|Poll_ver2.csproj|solutionrelative:mvvm\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 385,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,188 +70,139 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "emailSettings.json",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\emailSettings.json",
-              "RelativeDocumentMoniker": "emailSettings.json",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\emailSettings.json",
-              "RelativeToolTip": "emailSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-22T13:39:52.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PopupPolitic.xaml",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupPolitic.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\PopupPolitic.xaml",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupPolitic.xaml",
-              "RelativeToolTip": "MVVM\\View\\PopupPolitic.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-22T12:55:00.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "PollViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\PollViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\ViewModel\\PollViewModel.cs",
               "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\PollViewModel.cs",
               "RelativeToolTip": "MVVM\\ViewModel\\PollViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAA9wCAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T12:51:42.747Z"
+              "WhenOpened": "2025-06-05T08:22:04.008Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ResultViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\ResultViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\ViewModel\\ResultViewModel.cs",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\ResultViewModel.cs",
-              "RelativeToolTip": "MVVM\\ViewModel\\ResultViewModel.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAwEwAAAANAAAAAAAAAA==",
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\HomeViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T12:45:25.707Z"
+              "WhenOpened": "2025-06-05T08:20:58.356Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PopupError.xaml",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupError.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\PopupError.xaml",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupError.xaml",
-              "RelativeToolTip": "MVVM\\View\\PopupError.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-22T12:35:51.743Z"
+              "DocumentIndex": 6,
+              "Title": "emailSettings.json",
+              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\emailSettings.json",
+              "RelativeDocumentMoniker": "emailSettings.json",
+              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\emailSettings.json",
+              "RelativeToolTip": "emailSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-04T12:57:38.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PopupViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\PopupViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\ViewModel\\PopupViewModel.cs",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\PopupViewModel.cs",
-              "RelativeToolTip": "MVVM\\ViewModel\\PopupViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T12:34:23.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PopupError.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupError.xaml.cs",
-              "RelativeDocumentMoniker": "MVVM\\View\\PopupError.xaml.cs",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupError.xaml.cs",
-              "RelativeToolTip": "MVVM\\View\\PopupError.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T21:46:39.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "ResultView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\ResultView.xaml.cs",
               "RelativeDocumentMoniker": "MVVM\\View\\ResultView.xaml.cs",
               "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\ResultView.xaml.cs",
               "RelativeToolTip": "MVVM\\View\\ResultView.xaml.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAuwKwAAACIAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:23:22.56Z",
+              "WhenOpened": "2025-06-04T12:38:00.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\SendEmail\\EmailSender.cs",
+              "RelativeDocumentMoniker": "SendEmail\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\SendEmail\\EmailSender.cs",
+              "RelativeToolTip": "SendEmail\\EmailSender.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T16:34:57.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SmtpSettings.cs",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\Model\\SmtpSettings.cs",
-              "RelativeDocumentMoniker": "MVVM\\Model\\SmtpSettings.cs",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\Model\\SmtpSettings.cs",
-              "RelativeToolTip": "MVVM\\Model\\SmtpSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T13:40:54.25Z"
+              "DocumentIndex": 3,
+              "Title": "FinalView.xaml",
+              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\FinalView.xaml",
+              "RelativeDocumentMoniker": "MVVM\\View\\FinalView.xaml",
+              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\FinalView.xaml",
+              "RelativeToolTip": "MVVM\\View\\FinalView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-03T16:11:08.517Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\RelayCommand.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\RelayCommand.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T16:06:24.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ResultView.xaml",
               "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\ResultView.xaml",
               "RelativeDocumentMoniker": "MVVM\\View\\ResultView.xaml",
               "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\ResultView.xaml",
               "RelativeToolTip": "MVVM\\View\\ResultView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-21T19:39:38.667Z"
+              "WhenOpened": "2025-06-02T18:37:31.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResultViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\ResultViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\ResultViewModel.cs",
+              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\ResultViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\ResultViewModel.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAIwF8AAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T17:56:41.817Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PopupAgreement.xaml",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupAgreement.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\PopupAgreement.xaml",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupAgreement.xaml",
-              "RelativeToolTip": "MVVM\\View\\PopupAgreement.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-22T12:58:47.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SBlock.xaml",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\Assets\\Styles\\SBlock.xaml",
-              "RelativeDocumentMoniker": "Assets\\Styles\\SBlock.xaml",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\Assets\\Styles\\SBlock.xaml",
-              "RelativeToolTip": "Assets\\Styles\\SBlock.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-22T13:01:30.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PollView.xaml",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PollView.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\PollView.xaml",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PollView.xaml",
-              "RelativeToolTip": "MVVM\\View\\PollView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-21T19:31:24.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-21T19:00:39.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\MainWindow.xaml",
-              "RelativeToolTip": "MVVM\\View\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-21T18:58:21.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MVVM\\View\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MVVM\\View\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBUAAAArAAAAAAAAAA==",
+              "Title": "PopupPolitic.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupPolitic.xaml.cs",
+              "RelativeDocumentMoniker": "MVVM\\View\\PopupPolitic.xaml.cs",
+              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\View\\PopupPolitic.xaml.cs",
+              "RelativeToolTip": "MVVM\\View\\PopupPolitic.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T18:58:19.751Z"
+              "WhenOpened": "2025-06-04T12:01:20.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Dasha\\source\\repos\\Poll_ver2\\MVVM\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T11:32:34.616Z"
             }
           ]
         }

@@ -9,80 +9,74 @@
       Title="FinalView">
 
     <Grid Width="1080" Height="1920">
-
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
 
         <Image Source="/Assets/Resourses/logo.png" 
-     Grid.Row="0"
-     Margin="60 60 0 0"
-     Width="368"
-     HorizontalAlignment="Left"
-     VerticalAlignment="Top"/>
+                 Grid.Row="0"
+                 Margin="60 60 0 0"
+                 Width="368"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"/>
 
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="142 300">
+        <StackPanel Grid.Row="1" Margin="142 300">
             <TextBlock 
-      x:Name="LogoPage1" 
-      Style="{StaticResource Heading}"
-      >
-      Ваши результаты успешно отправлены!
-            </TextBlock>
+                  x:Name="LogoPage1" 
+                  Style="{StaticResource Heading}"
+                  Text="{StaticResource FinalViewTitle}"/>
 
             <TextBlock 
-      x:Name="textPage1" 
-      Style="{StaticResource Text}"
-      HorizontalAlignment="Center"
-      FontSize="36"
-      Margin="0 63 0 95"
-      TextWrapping="Wrap"
-       Text="Спасибо за прохождение теста"/>
+                  x:Name="textPage1" 
+                  Style="{StaticResource Text}"
+                  HorizontalAlignment="Center"
+                  FontSize="36"
+                  Margin="0 63 0 95"
+                  TextWrapping="Wrap"
+                  Text="{StaticResource FinalViewText}"/>
 
 
             <Border 
-      CornerRadius="36" 
-      Background="{StaticResource ButtonBrush_transparent}"
-      Margin="70 0 70 40">
+              CornerRadius="36" 
+              Background="{StaticResource ButtonBrush_transparent}"
+              Margin="70 0 70 40">
                 <StackPanel Orientation="Horizontal">
                     <Image 
-                    x:Name="ImageQR1PageF" Source="/Assets/Resourses/qr-code page4_1.png"
-                     Margin="24 24 36 24"
-                     Height="215"/>
+                        x:Name="ImageQR1PageF" 
+                        Source="/Assets/Resourses/qr-code page4_1.png"
+                         Margin="24 24 36 24"
+                         Height="215"/>
                     <TextBlock 
-                    x:Name="QR_text2" 
-                    Margin="0 24 0 24"
-                    Style="{StaticResource QRHeading}" 
-                  Width="356">
-              Узнать больше<LineBreak></LineBreak>
-              про оценку руководителей
-              SberQ
+                            x:Name="QR_text2" 
+                            Margin="0 24 0 24"
+                            Style="{StaticResource QRHeading}" 
+                            Width="356">
+                            <Run Text="{StaticResource HomeView_QR_info1}"/><LineBreak/>
+                            <Run Text="{StaticResource HomeView_QR_info2}"/><LineBreak/>
+                            <Run Text="{StaticResource HomeView_QR_info3}"/>    
                     </TextBlock>
                 </StackPanel>
             </Border>
 
             <Border 
-            CornerRadius="36" 
-            Background="{StaticResource ButtonBrush_transparent}"
-            Margin="70 0 70 95">
+                CornerRadius="36" 
+                Background="{StaticResource ButtonBrush_transparent}"
+                Margin="70 0 70 95">
                 <StackPanel Orientation="Horizontal">
                     <Image 
-                    x:Name="ImageQR2PageF" 
-                    Source="/Assets/Resourses/qr-code page4_2.png"
-                    Margin="24 24 36 24"
-                    Height="215"/>
+                        x:Name="ImageQR2PageF" 
+                        Source="/Assets/Resourses/qr-code page4_2.png"
+                        Margin="24 24 36 24"
+                        Height="215"/>
                     <TextBlock 
                             x:Name="QR_text3" 
                             Margin="0 24 0 24"
                             Style="{StaticResource QRHeading}" 
-                               Width="356">
-                            Узнать об образовательных решениях СберУниверситета
-                    </TextBlock>
+                            Width="356"
+                            Text="{StaticResource FinalViewQR2}"/>
+
                 </StackPanel>
             </Border>
 
@@ -90,12 +84,10 @@
                 Style="{StaticResource white_btn}"
                 Width="510"
                 Height="122"
-                    Click="NavigateToHome"
-                Content="{StaticResource GoMain}"/>
-
+                Content="{StaticResource GoMain}"
+                Command="{Binding NavigateToHomeCommand}"/>
 
         </StackPanel>
-
 
     </Grid>
 </Page>

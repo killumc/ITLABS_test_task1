@@ -204,7 +204,11 @@
         </Setter>
     </Style>
 
-
+<Style x:Key="BasePopupStyle" TargetType="Popup">
+    <Setter Property="Placement" Value="Center"/>
+    <Setter Property="StaysOpen" Value="False"/>
+    <Setter Property="AllowsTransparency" Value="True"/>
+</Style>
 
 
 </ResourceDictionary>

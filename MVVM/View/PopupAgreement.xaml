@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:Poll_ver2.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="1122" d:DesignWidth="960">
+
     <Border 
        Background="White" 
        BorderBrush="Gray" BorderThickness="1" 
@@ -65,7 +66,7 @@
                Margin="0 60 0 0"
                Style="{StaticResource popup_btn}"
                Content="{StaticResource Exit}"
-               Command="{Binding CloseAgreementPopupCommand}"/>
+               Command="{Binding AgreementPopup_ClouseCommand}"/>
         </StackPanel>
     </Border>
 </UserControl>

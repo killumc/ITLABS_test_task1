@@ -25,12 +25,5 @@ namespace Poll_ver2.MVVM.View
             InitializeComponent();
         }
 
-        private void NavigateToHome(object sender, RoutedEventArgs e)
-        {
-            if (Window.GetWindow(this) is MainWindow mainWindow)
-            {
-                mainWindow.MainFrame.Navigate(new HomeView());
-            }
-        }
     }
 }

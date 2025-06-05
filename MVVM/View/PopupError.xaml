@@ -7,46 +7,47 @@
              mc:Ignorable="d" 
              d:DesignHeight="713" d:DesignWidth="960">
     <Border 
-   
-   BorderBrush="Gray" BorderThickness="1" 
-   Padding="120"
-   CornerRadius="36">
+               BorderBrush="Gray" BorderThickness="1" 
+               Padding="120"
+               CornerRadius="36">
         <Border.Background>
             <ImageBrush ImageSource="/Assets/Resourses/background.png"/>
         </Border.Background>
         <StackPanel Margin="0,0,0,-20">
             <TextBlock 
-           FontWeight="SemiBold"
-           Margin="0 0 0 24"
-           Style="{StaticResource Heading}"
-           Text="Что-то пошло не так" Width="516"/>
+               FontWeight="SemiBold"
+               Margin="0 0 0 24"
+               Style="{StaticResource Heading}"
+               Text="{StaticResource PopupErrorTitle}" 
+                Width="516"/>
 
             <TextBlock
                 TextAlignment="Center"
                 FontSize="36"
                 Style="{StaticResource Text}">
-                Проверьте введенные данные
-и попробуйте еще раз
+                <Run Text="{StaticResource PopupErrorText1}"/>
+                <LineBreak/>
+                <Run Text="{StaticResource PopupErrorText2}"/>
             </TextBlock>
 
             <StackPanel Margin="0 95 0 0"
-                Orientation="Horizontal"
+                        Orientation="Horizontal"
                         HorizontalAlignment="Center">
-                 <Button
-           Height="94"
-           Width="338"
-           FontSize="24"
-           Margin="0 0 32 0"
-           Style="{StaticResource transparent_btn}"
-           Content="{StaticResource GoMain}"
-           Click="NavigateToHome"/>
                 <Button
-Height="94"
-Width="338"
-FontSize="24"
-Style="{StaticResource white_btn}"
-Content="Попробовать еще раз"
-Command="{Binding CloseErrorPopupCommand}"/>
+                   Height="94"
+                   Width="338"
+                   FontSize="24"
+                   Margin="0 0 32 0"
+                   Style="{StaticResource transparent_btn}"
+                   Content="{StaticResource GoMain}"
+                    Command="{Binding NavigateToHomeCommand}"/> 
+                <Button
+                    Height="94"
+                    Width="338"
+                    FontSize="24"
+                    Style="{StaticResource white_btn}"
+                    Content="{StaticResource Return}"
+                    Command="{Binding ErrorPopup_ClouseCommand}"/>
             </StackPanel>
            
         </StackPanel>

@@ -4,14 +4,10 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Poll_ver2.MVVM.View"
-      xmlns:vm="clr-namespace:Poll_ver2.MVVM.ViewModel"
       mc:Ignorable="d" 
       d:DesignHeight="1920" d:DesignWidth="1080"
       Title="ResultView">
 
-    <Page.DataContext>
-        <vm:PopupViewModel/>
-    </Page.DataContext>
 
 <!--анимация попап-->
     <Page.Resources>
@@ -23,9 +19,11 @@
             <DoubleAnimation Storyboard.TargetProperty="Opacity"
                              From="0.65" To="0" Duration="0:0:0.3"/>
         </Storyboard>
+
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </Page.Resources>
 
-    <Grid>
+    <Grid x:Name="RootGrid">
 
         <Rectangle x:Name="Overlay" Fill="#020B07" Opacity="0" Visibility="Collapsed"
                    Panel.ZIndex="1"/>
@@ -40,11 +38,6 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
             <Image Source="/Assets/Resourses/logo.png" 
        Grid.Row="0"
        Margin="60 60 0 0"
@@ -53,69 +46,70 @@
        VerticalAlignment="Top"/>
 
 
-            <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="142 76 142 0">
+            <StackPanel Grid.Row="2" Margin="142 76 142 0">
 
                 <TextBlock x:Name="Heading_Page2"
-                       Style="{StaticResource Heading}"
-                       >
-                Ваш результат <LineBreak/> *-* баллов
-                </TextBlock>
+                            Style="{StaticResource Heading}"
+                            Text="{Binding Heading}"/>
+
 
                 <TextBlock x:Name="Text1_Page3"
-                       Margin="0 40 0 24"
-                       Style="{StaticResource Text}">
-                    Описание
-                </TextBlock>
+                            Margin="0 40 0 24"
+                            Style="{StaticResource Text}"
+                           Text="{Binding Text1}"/>
+
 
                 <TextBlock x:Name="Text1_1_Page3"
-        Margin="0 0 0 40"
-        Style="{StaticResource Text}">
-                описание
-                </TextBlock>
+                            Margin="0 0 0 40"
+                            Style="{StaticResource Text}"
+                           Text="{Binding Text1_1}"/>
+
 
                 <TextBlock x:Name="Text2_Page3"
-                       Margin="0 0 0 32"
-                       Style="{StaticResource Text}">
-                Вот программы, на которые вы можете обратить внимание прямо сейчас:
-                </TextBlock>
+                            Margin="0 0 0 32"
+                            Style="{StaticResource Text}"
+                            Text="{StaticResource Result}"
+                            />
 
                 <StackPanel x:Name="Paragraph1">
                     <TextBlock x:Name="Paragraph1_Heading_Page3"
-                           Margin="0 0 0 16"
-                           Style="{StaticResource HeadingParagraph}">
-                    Курс1
-                    </TextBlock>
+                                Margin="0 0 0 16"
+                                Style="{StaticResource HeadingParagraph}"
+                               Text="{Binding Paragraph1Heading}"/>
+
                     <TextBlock x:Name="Paragraph1_Text_Page3"
                                FontSize="18"
-                            Style="{StaticResource Text}">
-                        описание курса
-                    </TextBlock>
+                                Style="{StaticResource Text}"
+                               Text="{Binding Paragraph1Text}"/>
+
                 </StackPanel>
+
 
                 <StackPanel x:Name="Paragraph2">
                     <TextBlock x:Name="Paragraph2_Heading_Page3"
-           Style="{StaticResource HeadingParagraph}">
-                        Курс2
-                    </TextBlock>
+                                Style="{StaticResource HeadingParagraph}"
+                               Text="{Binding Paragraph2Heading}"/>
+
                     <TextBlock x:Name="Paragraph2_Text_Page3"
                                FontSize="18"
-            Style="{StaticResource Text}">
-        описание курса
-                    </TextBlock>
+                                Style="{StaticResource Text}"
+                               Text="{Binding Paragraph2Text}"/>
+
                 </StackPanel>
+
 
                 <StackPanel x:Name="Paragraph3">
                     <TextBlock x:Name="Paragraph3_Heading_Page3"
+                                Style="{StaticResource HeadingParagraph}"
+                               Text="{Binding Paragraph3Heading}"/>
 
-           Style="{StaticResource HeadingParagraph}">
-    Курс3
-                    </TextBlock>
                     <TextBlock x:Name="Paragraph3_Text_Page3"
                                FontSize="18"
-            Style="{StaticResource Text}">
-        описание курса
-                    </TextBlock>
+                                Style="{StaticResource Text}"
+                               Text="{Binding Paragraph3Text}"/>
+
                 </StackPanel>
+
 
                 <Grid x:Name="Feedback_Form"
                 Margin="0 72 0 0">
@@ -140,11 +134,12 @@
 
 
                     <TextBox
-                        x:Name="TextboxEmail"
-                    Grid.Row="1" Grid.ColumnSpan="2"
-                    Style="{StaticResource EmailTextBoxStyle}"
-                    Tag="Email"
-                    Margin="0 32 0 16">
+                            x:Name="TextboxEmail"
+                            Grid.Row="1" Grid.ColumnSpan="2"
+                            Style="{StaticResource EmailTextBoxStyle}"
+                            Tag="Email"
+                            Margin="0 32 0 16"
+                            Text="{Binding UserEmail}">
                     </TextBox>
 
                     <StackPanel Orientation="Horizontal"
@@ -152,29 +147,31 @@
                             Grid.ColumnSpan="2"
                             Margin="0 0 0 92">
                         <CheckBox
-                            x:Name="AgreementCheckBox"
-                        Style="{StaticResource CustomCheckboxStyle}">
+                                    x:Name="AgreementCheckBox"
+                                    Style="{StaticResource CustomCheckboxStyle}"
+                                    IsChecked="{Binding IsChecked, Mode=TwoWay, 
+                                    UpdateSourceTrigger=PropertyChanged}">
                         </CheckBox>
 
                         <TextBlock
-                        FontSize="20"
-
-                        Style="{StaticResource Text}" Width="639">
-                        Я ознакомлен с 
-                        <Hyperlink NavigateUri=""
-                                   Click="HyperlinkPolitic_Click"
-                                   Style="{StaticResource HyperLinkStyle}">
-                            Политикой СберУниверситета
-                        </Hyperlink>
-                         и даю согласие на 
-                        <Hyperlink NavigateUri=""
-                                   Style="{StaticResource HyperLinkStyle}"
-                                   Click="HyperlinkAgreement_Click">
-                            обработку персональных данных
-                        </Hyperlink>
+                                    FontSize="20"
+                                    Style="{StaticResource Text}" 
+                                    Width="639"
+                                    
+                                >
+                                     <Run Text="{StaticResource ResultView_linktext1}"/>
+                            <Hyperlink
+                                    Command="{Binding PoliticPopup_OpenCommand}"
+                                    Style="{StaticResource HyperLinkStyle}">
+                                   <Run Text="{StaticResource ResultView_linktext2}"/>
+                            </Hyperlink>
+                                    <Run Text="{StaticResource ResultView_linktext3}"/>
+                            <Hyperlink 
+                                    Style="{StaticResource HyperLinkStyle}"
+                                    Command="{Binding AgreementPopup_OpeenCommand}">
+                                    <Run Text="{StaticResource ResultView_linktext4}"/>
+                            </Hyperlink>
                         </TextBlock>
-
-
 
                     </StackPanel>
 
@@ -184,9 +181,9 @@
                         Width="382"
                         Height="94"
                         FontSize="24"
-                            Click="NavigateToHome"
                         Style="{StaticResource transparent_btn}"
-                        Content="{StaticResource Complete}"/>
+                        Content="{StaticResource Complete}"
+                            Command="{Binding NavigateToHomeCommand}"/>
 
 
                     <Button x:Name="Btn_GetResults"
@@ -195,53 +192,55 @@
                         Width="382"
                         Height="94"
                         FontSize="24"
-                            Click="NavigateToFinal"
-                        Style="{StaticResource white_btn}">
-                        Получить результаты
+                           Content="Получить результаты"
+                        Style="{StaticResource white_btn}"
+                            Command="{Binding NavigateToFinalCommand}">
+
                     </Button>
                 </Grid>
-
-
             </StackPanel>
 
+            
 
         </Grid>
 
-        <!-- Попапы -->
-        <Popup x:Name="PopupPolitic" 
-               Placement="Center" 
-               StaysOpen="False" 
-               IsOpen="{Binding IsPoliticPopupOpen}"
-               Height="1800"
-               Width="960"
-               AllowsTransparency="True"
-               Opened="Popup_Opened"
-               Closed="Popup_Closed">
-            <local:PopupPolitic />
-        </Popup>
+            <Popup x:Name="PopupPolitic"
+                    IsOpen="{Binding IsPoliticPopupOpen, Mode=TwoWay}"
+                    Placement="Center" 
+                    StaysOpen="False" 
+                    Height="1800"
+                    Width="960"
+                    AllowsTransparency="True"
+                   >
+                <local:PopupPolitic DataContext="{Binding}" />
+            </Popup>
+
+       
 
         <Popup x:Name="PopupAgreement" 
+               IsOpen="{Binding IsAgreementPopupOpen}"
                Placement="Center" 
                StaysOpen="False" 
-               IsOpen="{Binding IsAgreementPopupOpen}"
                Height="1122"
                Width="960"
                AllowsTransparency="True"
                Opened="Popup_Opened"
-               Closed="Popup_Closed">
-            <local:PopupAgreement />
+               Closed="Popup_Closed"
+               >
+            <local:PopupAgreement DataContext="{Binding}"/>
         </Popup>
 
         <Popup x:Name="PopupError" 
+               IsOpen="{Binding IsErrorPopupOpen}"
                Placement="Center" 
                StaysOpen="False" 
-               IsOpen="{Binding IsErrorPopupOpen}"
                Height="713"
                Width="960"
                AllowsTransparency="True"
                Opened="Popup_Opened"
-               Closed="Popup_Closed">
-            <local:PopupError />
+               Closed="Popup_Closed"
+               >
+            <local:PopupError DataContext="{Binding}"/>
         </Popup>
 
     </Grid>

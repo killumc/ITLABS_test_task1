@@ -1,27 +1,31 @@
-﻿using System.Text;
+﻿using Poll_ver2.MVVM.ViewModel;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace Poll_ver2.MVVM.View
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
+
+        private readonly FrameNavigationService Navigation_Service;
+        private readonly MainViewModel ViewModel;
+
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new HomeView());
+
             ScaleWindowToFit();
+
+            Navigation_Service = new FrameNavigationService(MainFrame);
+            ViewModel = new MainViewModel(Navigation_Service);
+
+            DataContext = ViewModel;
+
+            Navigation_Service.NavigateTo("Home");
         }
+
+
 
         private void ScaleWindowToFit()
         {

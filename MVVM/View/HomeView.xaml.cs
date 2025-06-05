@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Poll_ver2.MVVM.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,19 +21,20 @@ namespace Poll_ver2.MVVM.View
     /// </summary>
     public partial class HomeView : Page
     {
-        public HomeView()
+        public HomeView(HomeViewModel viewModel)
         {
             InitializeComponent();
+            DataContext = viewModel;
         }
 
-        private void NavigateToPollView(object sender, RoutedEventArgs e)
-        {
-            // Получаем родительское окно и его Frame
-            if (Window.GetWindow(this) is MainWindow mainWindow)
-            {
-                mainWindow.MainFrame.Navigate(new PollView());
-            }
+        //private void NavigateToPollView(object sender, RoutedEventArgs e)
+        //{
+        //    // Получаем родительское окно и его Frame
+        //    if (Window.GetWindow(this) is MainWindow mainWindow)
+        //    {
+        //        mainWindow.MainFrame.Navigate(new PollView());
+        //    }
 
-        }
+        //}
     }
 }

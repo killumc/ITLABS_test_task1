@@ -1,15 +1,31 @@
 ﻿using Poll_ver2.MVVM.Model;
+using Poll_ver2.MVVM.Navigation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Poll_ver2.MVVM.ViewModel
 {
-    class PollViewModel : INotifyPropertyChanged
+    public class PollViewModel : INotifyPropertyChanged
     {
+
+        private readonly INavigationService _navigationService;
+
+        public ICommand NavigateToResultCommand { get; }
+        public ICommand Back { get; }
+
+        public PollViewModel(INavigationService navigationService)
+        {
+            _navigationService = navigationService;
+            NavigateToResultCommand = new RelayCommand(() => { CalculateTotalScore(); _navigationService.NavigateTo("Result", this); });
+            Back = new RelayCommand(() => _navigationService.NavigateTo("Home"));
+        }
+
+
         private double _sliderValue1;
         private double _sliderValue2;
         private double _sliderValue3;
@@ -83,9 +99,10 @@ namespace Poll_ver2.MVVM.ViewModel
 
         public int TotalScore { get; private set; }
 
-        public void CalculateTotalScore()
+        public int CalculateTotalScore()
         {
             TotalScore = (int)(SliderValue1 + SliderValue2 + SliderValue3 + SliderValue4 + SliderValue5);
+            return TotalScore;
         }
 
         // Событие, которое уведомляет интерфейс об изменениях в свойствах

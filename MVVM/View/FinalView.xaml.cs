@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Poll_ver2.MVVM.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,18 +21,11 @@ namespace Poll_ver2.MVVM.View
     /// </summary>
     public partial class FinalView : Page
     {
-        public FinalView()
+
+        public FinalView(FinalViewModel viewModel)
         {
             InitializeComponent();
-        }
-
-        private void NavigateToHome(object sender, RoutedEventArgs e)
-        {
-            if (Window.GetWindow(this) is MainWindow mainWindow)
-            {
-                mainWindow.MainFrame.Navigate(new HomeView());
-            }
-
+            DataContext = viewModel;
         }
     }
 }

@@ -8,17 +8,13 @@
       d:DesignHeight="1920" d:DesignWidth="1080"
       Title="HomeView">
 
+
     <Grid Width="1080" Height="1920">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
 
         <Image Source="/Assets/Resourses/logo.png" 
                Grid.Row="0"
@@ -27,13 +23,15 @@
                HorizontalAlignment="Left"
                VerticalAlignment="Top"/>
 
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="142 300">
+        <StackPanel 
+            Grid.Row="1" 
+            Margin="142 300">
+
             <TextBlock 
-           x:Name="LogoPage1" 
-           Style="{StaticResource Heading}"
-           >
-           SberQ
-            </TextBlock>
+                x:Name="LogoPage1" 
+                Style="{StaticResource Heading}"
+                Text="{StaticResource HomeViewTitle}"
+            />
 
             <TextBlock 
            x:Name="textPage1" 
@@ -49,37 +47,39 @@
            CornerRadius="36" 
            Background="{StaticResource ButtonBrush_transparent}"
            Margin="70">
-                <StackPanel Orientation="Horizontal">
-                    <Image 
-                   x:Name="ImageQRPage1" Source="/Assets/Resourses/qr-code page1.png"
-                   Margin="24 24 36 24"
-                   Height="215"/>
-                    <TextBlock 
-                   x:Name="QR_text" 
-                   Margin="0 24 0 24"
 
-                   Style="{StaticResource QRHeading}" 
-                       Width="356">
-                   Узнать больше<LineBreak></LineBreak>
-                   про оценку руководителей
-                   SberQ
+                <StackPanel Orientation="Horizontal">
+
+                    <Image 
+                        x:Name="ImageQRPage1" 
+                        Source="/Assets/Resourses/qr-code page1.png"
+                        Margin="24 24 36 24"
+                        Height="215"/>
+
+                    <TextBlock 
+                        x:Name="QR_text" 
+                        Margin="0 24 0 24"
+                        Style="{StaticResource QRHeading}" 
+                        Width="356">
+                        
+                    <Run Text="{StaticResource HomeView_QR_info1}"/><LineBreak/>
+                    <Run Text="{StaticResource HomeView_QR_info2}"/><LineBreak/>
+                    <Run Text="{StaticResource HomeView_QR_info3}"/>
                     </TextBlock>
+
                 </StackPanel>
             </Border>
 
-            <Button x:Name="Page1_btn" Style="{StaticResource white_btn}"
-               Width="510"
-               Height="122"
-               Margin="50"
-               FontWeight="SemiBold"
-               Click="NavigateToPollView"
-               >
-
-                Проверить себя
-            </Button>
-
+            <Button x:Name="Page1_btn" 
+                    Style="{StaticResource white_btn}"
+                    Width="510"
+                    Height="122"
+                    Margin="50"
+                    FontWeight="SemiBold"
+                    Command="{Binding NavigateToPollCommand}"
+                    Content="{StaticResource HomeViewBtn}"
+                    />
         </StackPanel>
-
 
     </Grid>
 </Page>
