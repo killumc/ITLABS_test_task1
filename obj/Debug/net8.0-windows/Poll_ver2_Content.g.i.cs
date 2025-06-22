@@ -9,5 +9,6 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("emailsettings.json")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resultinfo.json")]
 
 

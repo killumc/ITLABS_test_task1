@@ -5,11 +5,14 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
+using System.Text.Json;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using Poll_ver2.MVVM.Model;
 
 namespace Poll_ver2.MVVM.ViewModel
 {
@@ -36,20 +39,9 @@ namespace Poll_ver2.MVVM.ViewModel
         public string Text1 { get; private set; }
         public string Text1_1 { get; private set; }
 
-
         private readonly INavigationService _navigationService;
 
-        public ResultViewModel(PollViewModel pollViewModel, INavigationService navigationService)
-        {
-            _totalScore = pollViewModel.TotalScore;
-
-            SetInfo();
-
-            _navigationService = navigationService;
-
-        }
-
-        [RelayCommand] private void PoliticPopup_Open() => IsPoliticPopupOpen = true;
+    [RelayCommand] private void PoliticPopup_Open() => IsPoliticPopupOpen = true;
         [RelayCommand] private void PoliticPopup_Close() => IsPoliticPopupOpen = false;
         [RelayCommand] private void AgreementPopup_Open() => IsAgreementPopupOpen = true;
         [RelayCommand] private void AgreementPopup_Close()=> IsAgreementPopupOpen = false;
@@ -89,45 +81,38 @@ namespace Poll_ver2.MVVM.ViewModel
         }
 
 
+        public ResultViewModel(PollViewModel pollViewModel, INavigationService navigationService)
+        {
+            _totalScore = pollViewModel.TotalScore;
+
+            SetInfo();
+
+            _navigationService = navigationService;
+
+        }
+
+
         private void SetInfo()
         {
-            if (_totalScore >= 0 && _totalScore <= 2)
-            {
-                Paragraph1Heading = "Upgrade: личностный интенсив";
-                Paragraph2Heading = "Управление изменениями ";
-                Paragraph3Heading = "Бизнес с AI: от теории к практике";
-                Paragraph1Text = "позволит увидеть перспективы и найти свои точка роста";
-                Paragraph2Text = "научит навигировать компанию в постоянно меняющемся окружении";
-                Paragraph3Text = "программа направлена на изучение процессов разработки и внедрения AI-технологий в бизнесе с целью оптимизации процессов и повышение экономической эффективности";
-                Heading = "Ваш результат\r\n 0-2 баллов";
-                Text1 = "Похоже, вы упускаете карьерные возможности, которые вас окружают, а вместе с ними и интересные перспективы. Пройдя этот тест, вы уже сделали первый шаг, поздравляем!";
-                Text1_1 = "Для дальнейшего развития предлагаем ознакомиться с возможностями диагностики и карьерного консультирования SberQ.";
-            }
+            var json = File.ReadAllText("ResultInfo.json");
+            var results = JsonSerializer.Deserialize<ResultInfo>(json);
 
-            else if (_totalScore >= 3 && _totalScore <= 6)
-            {
-                Paragraph1Heading = "Upgrade 2: осознанное лидерство";
-                Paragraph2Heading = "Мини MBA";
-                Paragraph3Heading = "Цифровая трансформация бизнеса";
-                Paragraph1Text = "позволит увидеть перспективы и развить свой лидерский потенциал";
-                Paragraph2Text = "даст комплексный набор знаний, инструментов и навыков актуальных для повышения эффективности бизнес-процессов";
-                Paragraph3Text = "поможет погрузиться в инновационные технологии и разработать свой проект по изменению процессов в компании";
-                Heading = "Ваш результат \r\n3-6 баллов";
-                Text1 = "Вы явно не новичок в развитии, продолжайте в том же духе.";
-                Text1_1 = "Чтобы выйти на следующий уровень и использовать собственный ресурс по максимуму предлагаем ознакомиться с возможностями диагностики и карьерного консультирования SberQ.";
-            }
+            Result ResultInfo = null;
+            if (_totalScore > 0 && _totalScore <= 2) ResultInfo = results.ResultGroup1;
+            else if (_totalScore >= 3 && _totalScore <= 6) ResultInfo = results.ResultGroup2;
+            else if (_totalScore >= 7 && _totalScore <= 10) ResultInfo = results.ResultGroup3;
 
-            else if(_totalScore>=7  && _totalScore<=10)
+            if (ResultInfo != null)
             {
-                Paragraph1Heading = "Вызов сильных";
-                Paragraph2Heading = "STEP";
-                Paragraph3Heading = "Digital Strategy";
-                Paragraph1Text = "новая уникальная программа, которая поможет лидерам исследовать свой внутренний ресурс и направить его на достижение новых результатов, даже если кажется, что они уже пройдены";
-                Paragraph2Text = "международная программа сделает из вас лидера нового поколения, способного в условиях высокой неопределённости инициировать изменения и управлять ими";
-                Paragraph3Text = "поможет перестроить текущую бизнес-модель и провести цифровую трансформацию бизнеса для завоевания и сохранения лидерской позиции на рынке";
-                Heading = "Ваш результат\r\n7-10 баллов";
-                Text1 = "Приятно иметь дело с профессионалом! Продолжайте в том же духе!";
-                Text1_1 = "Для достижения самых амбициозных целей предлагаем ознакомиться с возможностями диагностики и карьерного консультирования SberQ.";
+                Paragraph1Heading = ResultInfo.Paragraph1Heading;
+                Paragraph2Heading = ResultInfo.Paragraph2Heading;
+                Paragraph3Heading = ResultInfo.Paragraph3Heading;
+                Paragraph1Text = ResultInfo.Paragraph1Text;
+                Paragraph2Text = ResultInfo.Paragraph2Text;
+                Paragraph3Text = ResultInfo.Paragraph3Text;
+                Heading = ResultInfo.Heading;
+                Text1 = ResultInfo.Text1;
+                Text1_1 = ResultInfo.Text1_1;
             }
         }
 

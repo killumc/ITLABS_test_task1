@@ -48,3 +48,4 @@ C:\Users\Dasha\source\repos\Poll_ver2\obj\Debug\net8.0-windows\refint\Poll_ver2.
 C:\Users\Dasha\source\repos\Poll_ver2\obj\Debug\net8.0-windows\Poll_ver2.pdb
 C:\Users\Dasha\source\repos\Poll_ver2\obj\Debug\net8.0-windows\Poll_ver2.genruntimeconfig.cache
 C:\Users\Dasha\source\repos\Poll_ver2\obj\Debug\net8.0-windows\ref\Poll_ver2.dll
+C:\Users\Dasha\source\repos\Poll_ver2\bin\Debug\net8.0-windows\ResultInfo.json

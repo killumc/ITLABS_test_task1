@@ -19,10 +19,14 @@
     <None Remove="Assets\Resourses\qr-code page4_1.png" />
     <None Remove="Assets\Resourses\qr-code page4_2.png" />
     <None Remove="Assets\Resourses\slider.png" />
+    <None Remove="ResultInfo.json" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="emailSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ResultInfo.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

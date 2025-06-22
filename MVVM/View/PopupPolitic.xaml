@@ -1,122 +1,125 @@
-﻿<UserControl x:Class="Poll_ver2.MVVM.View.PopupPolitic"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Poll_ver2.MVVM.View"
-             
-             mc:Ignorable="d" 
-             d:DesignHeight="1800" d:DesignWidth="960">
-    <Border Background="White" 
-        BorderBrush="Gray" 
-        BorderThickness="1" 
-        Padding="60, 70"
+﻿<UserControl
+    x:Class="Poll_ver2.MVVM.View.PopupPolitic"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Poll_ver2.MVVM.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="1800"
+    d:DesignWidth="960"
+    mc:Ignorable="d">
+    <Border
+        Padding="60,70"
+        Background="White"
+        BorderBrush="Gray"
+        BorderThickness="1"
         CornerRadius="36">
         <StackPanel>
-            <TextBlock FontSize="28"
-                   FontWeight="SemiBold"
-                   Foreground="Black"
-                   TextAlignment="Left"
-                   Margin="0 0 0 24"
-                   Style="{StaticResource HeadingParagraph}"
-                   Text="{StaticResource PopupPoliticTitle}" 
-                   Width="814"/>
+            <TextBlock
+                Width="814"
+                Margin="0,0,0,24"
+                FontSize="28"
+                FontWeight="SemiBold"
+                Foreground="Black"
+                Style="{StaticResource HeadingParagraph}"
+                Text="{StaticResource PopupPoliticTitle}"
+                TextAlignment="Left" />
 
-            <ScrollViewer VerticalScrollBarVisibility="Auto" Height="1381">
-                <TextBlock 
+            <ScrollViewer Height="1381" VerticalScrollBarVisibility="Auto">
+                <TextBlock
                     FontFamily="{StaticResource TextFont}"
-                    Foreground="Black"
                     FontSize="18"
+                    Foreground="Black"
                     TextWrapping="Wrap">
-                    <Run Text="{StaticResource PrivacyPolicy_1_Title}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_3}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_4}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_5}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_6}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_7}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_8}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_8_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_1_8_2}"/> <LineBreak/>
-<LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Title}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref3}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref4}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref5}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref6}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref7}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref8}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref9}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref10}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref11}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref12}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_2_Ref13}"/> <LineBreak/>
-<LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_Title}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_1_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_1_2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_1_3}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_1_4}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_1_5}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_1_6}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_2_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_2_2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_2_3}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_2_4}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_2_5}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_3}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_4}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_5}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_6}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_3_7}"/> <LineBreak/>
+                    <Run Text="{StaticResource PrivacyPolicy_1_Title}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_3}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_4}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_5}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_6}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_7}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_8}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_8_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_1_8_2}" /> <LineBreak />
+                    <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Title}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref3}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref4}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref5}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref6}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref7}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref8}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref9}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref10}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref11}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref12}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_2_Ref13}" /> <LineBreak />
+                    <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_Title}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_1_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_1_2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_1_3}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_1_4}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_1_5}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_1_6}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_2_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_2_2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_2_3}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_2_4}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_2_5}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_3}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_4}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_5}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_6}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_3_7}" /> <LineBreak />
 
-<LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_Title}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_3}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_4}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_5}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_6}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_7}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_8}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_9}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_10}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_1_11}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_4_3}"/> <LineBreak/>
+                    <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_Title}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_3}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_4}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_5}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_6}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_7}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_8}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_9}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_10}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_1_11}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_4_3}" /> <LineBreak />
 
-<LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_Title}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1_2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1_3}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1_4}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1_5}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1_6}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1_7}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1_8}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_1_9}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_3}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_4}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_5}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_5_6}"/> <LineBreak/>
-<LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_6_Title}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_6_1}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_6_2}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_6_3}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_6_4}"/> <LineBreak/>
-                    <Run Text="{StaticResource PrivacyPolicy_6_5}"/> <LineBreak/>
+                    <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_Title}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1_2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1_3}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1_4}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1_5}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1_6}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1_7}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1_8}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_1_9}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_3}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_4}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_5}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_5_6}" /> <LineBreak />
+                    <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_6_Title}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_6_1}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_6_2}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_6_3}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_6_4}" /> <LineBreak />
+                    <Run Text="{StaticResource PrivacyPolicy_6_5}" /> <LineBreak />
                 </TextBlock>
 
             </ScrollViewer>
@@ -125,13 +128,14 @@
 
 
 
-            <Button Height="94"
+            <Button
                 Width="338"
-                FontSize="24"
-                Margin="0 80 0 0"
-                Style="{StaticResource popup_btn}"
+                Height="94"
+                Margin="0,80,0,0"
+                Command="{Binding PoliticPopup_CloseCommand}"
                 Content="{StaticResource Exit}"
-                Command="{Binding PoliticPopup_CloseCommand}"/>
+                FontSize="24"
+                Style="{StaticResource popup_btn}" />
         </StackPanel>
     </Border>
 </UserControl>
