@@ -1,14 +1,13 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Color x:Key="Btn_Green">#18AA7B</Color>
     <Color x:Key="Btn_transparent">#40FFFFFF</Color>
     <Color x:Key="ColorHint">#80FFFFFF</Color>
     <Color x:Key="Link_Yellow">#DBFFBD</Color>
     <Color x:Key="LinkMouse_Yellow">#b1e697</Color>
 
-    <SolidColorBrush x:Key="ButtonBrush_Green" Color="{StaticResource Btn_Green}"/>
-    <SolidColorBrush x:Key="ButtonBrush_transparent" Color="{StaticResource Btn_transparent}"/>
-    <SolidColorBrush x:Key="HyperLink_Yellow" Color="{StaticResource Link_Yellow}"/>
-    <SolidColorBrush x:Key="HyperLinkMouse_Yellow" Color="{StaticResource LinkMouse_Yellow}"/>
-    <SolidColorBrush x:Key="ColorHintBrush" Color="{StaticResource ColorHint}"/>
+    <SolidColorBrush x:Key="ButtonBrush_Green" Color="{StaticResource Btn_Green}" />
+    <SolidColorBrush x:Key="ButtonBrush_transparent" Color="{StaticResource Btn_transparent}" />
+    <SolidColorBrush x:Key="HyperLink_Yellow" Color="{StaticResource Link_Yellow}" />
+    <SolidColorBrush x:Key="HyperLinkMouse_Yellow" Color="{StaticResource LinkMouse_Yellow}" />
+    <SolidColorBrush x:Key="ColorHintBrush" Color="{StaticResource ColorHint}" />
 </ResourceDictionary>

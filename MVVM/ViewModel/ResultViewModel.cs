@@ -13,13 +13,16 @@ using System.Windows.Input;
 
 namespace Poll_ver2.MVVM.ViewModel
 {
-    public class ResultViewModel : ObservableObject
+    public partial class ResultViewModel : ObservableObject
     {
-        private int _totalScore;
-        private bool _isPoliticPopupOpen;
-        private bool _isAgreementPopupOpen;
-        private bool _isErrorPopupOpen;
-        private string _userEmail;
+        [ObservableProperty]  private int _totalScore;
+        [ObservableProperty]  private bool _isPoliticPopupOpen;
+        [ObservableProperty] private bool _isAgreementPopupOpen;
+        [ObservableProperty] private bool _isErrorPopupOpen;
+
+        [ObservableProperty] private string _userEmail;
+
+        [ObservableProperty] private bool _isChecked;
 
         public string Paragraph1Heading { get; private set; }
         public string Paragraph2Heading { get; private set; }
@@ -34,52 +37,7 @@ namespace Poll_ver2.MVVM.ViewModel
         public string Text1_1 { get; private set; }
 
 
-        public bool IsPoliticPopupOpen
-        {
-            get => _isPoliticPopupOpen;
-            set => SetProperty(ref _isPoliticPopupOpen, value);
-        }
-        public bool IsAgreementPopupOpen
-        {
-            get => _isAgreementPopupOpen;
-            set => SetProperty(ref _isAgreementPopupOpen, value);
-        }
-        public bool IsErrorPopupOpen
-        {
-            get => _isErrorPopupOpen;
-            set => SetProperty(ref _isErrorPopupOpen, value);
-        }
-
-        public string UserEmail
-        {
-            get => _userEmail;
-            set => SetProperty(ref _userEmail, value);
-        }
-
         private readonly INavigationService _navigationService;
-
- 
-        public ICommand NavigateToHomeCommand { get; }
-        public ICommand NavigateToFinalCommand { get; }
-        public ICommand PoliticPopup_OpenCommand { get; }
-        public ICommand PoliticPopup_ClouseCommand { get; }
-        public ICommand AgreementPopup_OpeenCommand { get; }
-        public ICommand AgreementPopup_ClouseCommand { get; }
-        public ICommand ErrorPopup_ClouseCommand { get; }
-
-        private bool isChecked;
-        public bool IsChecked
-        {
-            get => isChecked;
-            set
-            {
-                if (SetProperty(ref isChecked, value))
-                {
-                    // Обновляем состояние команды при изменении IsChecked
-                    ((AsyncRelayCommand)NavigateToFinalCommand).NotifyCanExecuteChanged();
-                }
-            }
-        }
 
         public ResultViewModel(PollViewModel pollViewModel, INavigationService navigationService)
         {
@@ -88,53 +46,48 @@ namespace Poll_ver2.MVVM.ViewModel
             SetInfo();
 
             _navigationService = navigationService;
-            NavigateToHomeCommand = new RelayCommand(() => _navigationService.NavigateTo("Home"));
-            NavigateToFinalCommand = new AsyncRelayCommand(async () =>
-            {
-                if (IsChecked == false)
-                {
-                    System.Windows.MessageBox.Show("Перед отправкой ознакомтесь с политикой и дайте согласие на обработку персональных данных.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-                }
-                else
-                {
-                    try
-                    {
-                        // Проверка email
-                        if (string.IsNullOrWhiteSpace(UserEmail) || !UserEmail.Contains("@"))
-                        {
-                            IsErrorPopupOpen = true;
-                            return;
-                        }
-
-
-
-                        var emailSender = new Poll_ver2.SendEmail.EmailSender();
-
-                        // Формируем тело письма с результатами (пример)
-                        string body = $"{Heading}\n\n{Text1}\n{Text1_1}\n\nСпасибо за прохождение теста!";
-
-                        // Отправляем письмо (предполагается, что есть асинхронный метод)
-                        await emailSender.SendMessageAsync(UserEmail, "Результаты теста", body);
-
-                        // Если отправка успешна — навигация
-                        _navigationService.NavigateTo("Final");
-                    }
-                    catch (Exception ex)
-                    {
-                        Debug.WriteLine($"Ошибка отправки письма: {ex.Message}");
-                        IsErrorPopupOpen = true;
-                    }
-                }
-            });
-            PoliticPopup_OpenCommand = new RelayCommand(() => IsPoliticPopupOpen = true);
-            PoliticPopup_ClouseCommand = new RelayCommand(() => IsPoliticPopupOpen=false);
-
-            AgreementPopup_OpeenCommand = new RelayCommand(()=> IsAgreementPopupOpen=true);
-            AgreementPopup_ClouseCommand = new RelayCommand(() => IsAgreementPopupOpen = false);
-
-            ErrorPopup_ClouseCommand = new RelayCommand(() => IsErrorPopupOpen = false);
 
         }
+
+        [RelayCommand] private void PoliticPopup_Open() => IsPoliticPopupOpen = true;
+        [RelayCommand] private void PoliticPopup_Close() => IsPoliticPopupOpen = false;
+        [RelayCommand] private void AgreementPopup_Open() => IsAgreementPopupOpen = true;
+        [RelayCommand] private void AgreementPopup_Close()=> IsAgreementPopupOpen = false;
+        [RelayCommand] private void ErrorPopup_Close() => IsErrorPopupOpen = false;
+        [RelayCommand] private void NavigateToHome() => _navigationService.NavigateTo("Home");
+        [RelayCommand] private void NavigateToFinal()
+        {
+            if (IsChecked)
+            {
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(UserEmail) || !UserEmail.Contains("@"))
+                    {
+                        IsErrorPopupOpen = true;
+                        return;
+                    }
+
+                    var emailSender = new Poll_ver2.SendEmail.EmailSender();
+
+                    string body = $"{Heading}\n\n{Text1}\n{Text1_1}\n\nСпасибо за прохождение теста!";
+
+                    emailSender.SendMessage(UserEmail, "Результаты теста", body);
+
+                    _navigationService.NavigateTo("Final");
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Ошибка отправки письма: {ex.Message}");
+                    IsErrorPopupOpen = true;
+                }
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Перед отправкой ознакомтесь с политикой и дайте согласие на обработку персональных данных.", 
+                    "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
 
         private void SetInfo()
         {
@@ -176,13 +129,6 @@ namespace Poll_ver2.MVVM.ViewModel
                 Text1 = "Приятно иметь дело с профессионалом! Продолжайте в том же духе!";
                 Text1_1 = "Для достижения самых амбициозных целей предлагаем ознакомиться с возможностями диагностики и карьерного консультирования SberQ.";
             }
-        }
-
-
-        public event PropertyChangedEventHandler? PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
 

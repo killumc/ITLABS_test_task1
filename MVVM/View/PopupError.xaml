@@ -47,7 +47,7 @@
                     FontSize="24"
                     Style="{StaticResource white_btn}"
                     Content="{StaticResource Return}"
-                    Command="{Binding ErrorPopup_ClouseCommand}"/>
+                    Command="{Binding ErrorPopup_CloseCommand}"/>
             </StackPanel>
            
         </StackPanel>

@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Poll_ver2.MVVM.Navigation;
 using System;
 using System.Collections.Generic;
@@ -9,17 +10,15 @@ using System.Windows.Input;
 
 namespace Poll_ver2.MVVM.ViewModel
 {
-    public class FinalViewModel : ObservableObject
+    public partial class FinalViewModel : ObservableObject
     {
         private readonly INavigationService _navigationService;
-
-        public ICommand NavigateToHomeCommand { get; }
 
         public FinalViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
-            NavigateToHomeCommand = new RelayCommand(() => _navigationService.NavigateTo("Home"));
         }
 
+        [RelayCommand] private void NavigateToHome() => _navigationService.NavigateTo("Home");
     }
 }

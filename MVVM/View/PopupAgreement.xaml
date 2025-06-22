@@ -66,7 +66,7 @@
                Margin="0 60 0 0"
                Style="{StaticResource popup_btn}"
                Content="{StaticResource Exit}"
-               Command="{Binding AgreementPopup_ClouseCommand}"/>
+               Command="{Binding AgreementPopup_CloseCommand}"/>
         </StackPanel>
     </Border>
 </UserControl>

@@ -29,7 +29,7 @@ namespace Poll_ver2.SendEmail
             }
         }
 
-        public async Task SendMessageAsync(string toEmail, string subject, string body)
+        public void SendMessage(string toEmail, string subject, string body)
         {
             var smtpSettings = LoadSettings("emailSettings.json"); // путь к файлу с настройками
 
@@ -45,7 +45,7 @@ namespace Poll_ver2.SendEmail
                     mailMessage.Subject = subject;
                     mailMessage.Body = body;
 
-                    await smtpClient.SendMailAsync(mailMessage);
+                    smtpClient.Send(mailMessage);
                 }
             }
         }

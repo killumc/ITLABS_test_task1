@@ -1,4 +1,5 @@
-﻿using Poll_ver2.MVVM.Model;
+﻿using CommunityToolkit.Mvvm.Input;
+using Poll_ver2.MVVM.Model;
 using Poll_ver2.MVVM.Navigation;
 using System;
 using System.Collections.Generic;
@@ -10,19 +11,22 @@ using System.Windows.Input;
 
 namespace Poll_ver2.MVVM.ViewModel
 {
-    public class PollViewModel : INotifyPropertyChanged
+    public partial class PollViewModel : INotifyPropertyChanged
     {
 
         private readonly INavigationService _navigationService;
 
-        public ICommand NavigateToResultCommand { get; }
-        public ICommand Back { get; }
+
+        [RelayCommand] private void NavigateToResult()
+        {
+            CalculateTotalScore();
+            _navigationService.NavigateTo("Result", this);
+        }
+        [RelayCommand] private void Back() => _navigationService.NavigateTo("Home");
 
         public PollViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
-            NavigateToResultCommand = new RelayCommand(() => { CalculateTotalScore(); _navigationService.NavigateTo("Result", this); });
-            Back = new RelayCommand(() => _navigationService.NavigateTo("Home"));
         }
 
 

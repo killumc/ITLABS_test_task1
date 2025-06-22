@@ -131,7 +131,7 @@
                 Margin="0 80 0 0"
                 Style="{StaticResource popup_btn}"
                 Content="{StaticResource Exit}"
-                Command="{Binding PoliticPopup_ClouseCommand}"/>
+                Command="{Binding PoliticPopup_CloseCommand}"/>
         </StackPanel>
     </Border>
 </UserControl>
